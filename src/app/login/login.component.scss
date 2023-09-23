@@ -1,0 +1,18 @@
+body {
+    height: 100vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(5, 78, 138, 0.9009978991596639) 35%,
+      rgba(97, 97, 97, 1) 100%
+    );
+    color: white;
+  }
+  .container {
+    width: 400px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+  }
+  

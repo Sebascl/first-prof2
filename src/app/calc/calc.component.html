@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <button class="back btn btn-danger rounded-pill px-3 p-3 col-2" [routerLink]="''"> Volver </button>
+    <div class="container">
+      <div class="screen">
+        <div class="numberscreen">{{ calNumber }}</div>
+      </div>
+      <div class="calculator row">
+        <button class="clear col-12" (click)="onClickClear()">Clear</button>
+
+        <div class="buttonsleft col-lg-8 col-sm-12 col-md-12">
+          <div class="row">
+            <div class="col-4">
+              <button class="button p-3 m-2" (click)="onClickCalculate('7')">
+                7
+              </button>
+            </div>
+            <div class="col-4">
+              <button class="button p-3 m-2" (click)="onClickCalculate('8')">
+                8
+              </button>
+            </div>
+            <div class="col-4">
+              <button class="button p-3 m-2" (click)="onClickCalculate('9')">
+                9
+              </button>
+            </div>
+
+            <div class="col-4">
+              <button class="button p-3 m-2" (click)="onClickCalculate('4')">
+                4
+              </button>
+            </div>
+            <div class="col-4">
+              <button class="button p-3 m-2" (click)="onClickCalculate('5')">
+                5
+              </button>
+            </div>
+            <div class="col-4">
+              <button class="button p-3 m-2" (click)="onClickCalculate('6')">
+                6
+              </button>
+            </div>
+            <div class="col-4">
+              <button class="button p-3 m-2" (click)="onClickCalculate('1')">
+                1
+              </button>
+            </div>
+            <div class="col-4">
+              <button class="button p-3 m-2" (click)="onClickCalculate('2')">
+                2
+              </button>
+            </div>
+            <div class="col-4">
+              <button class="button p-3 m-2" (click)="onClickCalculate('3')">
+                3
+              </button>
+            </div>
+            <div class="col-4">
+              <button class="button p-3 m-2" (click)="onClickCalculate('0')">
+                0
+              </button>
+            </div>
+            <div class="col-4">
+              <button class="button p-3 m-2" (click)="onClickCalculate('.')">
+                .
+              </button>
+            </div>
+            <div class="col-4">
+              <button class="button equal p-3 m-2" (click)="onClickEqual()">
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="buttonsleft col-lg-4 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-lg-12 col-3">
+              <button
+                class="button operator p-3 m-2"
+                (click)="onClickCalculate('/')"
+              >
+                /
+              </button>
+            </div>
+            <div class="col-lg-12 col-3">
+              <button
+                class="button operator p-3 m-2"
+                (click)="onClickCalculate('*')"
+              >
+                x
+              </button>
+            </div>
+            <div class="col-lg-12 col-3">
+              <button
+                class="button operator p-3 m-2"
+                (click)="onClickCalculate('-')"
+              >
+                -
+              </button>
+            </div>
+            <div class="col-lg-12 col-3">
+              <button
+                class="button operator p-3 m-2"
+                (click)="onClickCalculate('+')"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
